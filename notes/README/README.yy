@@ -1,0 +1,12 @@
+{
+  "$GMNotes":"v1",
+  "%Name":"README",
+  "name":"README",
+  "openedOnFirstLoad":true,
+  "parent":{
+    "name":"rpg1",
+    "path":"rpg1.yyp",
+  },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
+}
