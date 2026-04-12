@@ -39,6 +39,7 @@
     {"name":"spr_slash","order":14,"path":"sprites/spr_slash/spr_slash.yy",},
     {"name":"spr_talk","order":6,"path":"sprites/spr_talk/spr_talk.yy",},
     {"name":"spr_tileset","order":2,"path":"sprites/spr_tileset/spr_tileset.yy",},
+    {"name":"Sprite27","order":23,"path":"sprites/Sprite27/Sprite27.yy",},
     {"name":"the_skeld","order":22,"path":"sprites/the_skeld/the_skeld.yy",},
   ],
 }

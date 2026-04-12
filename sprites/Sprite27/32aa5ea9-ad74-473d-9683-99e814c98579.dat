@@ -1,0 +1,18 @@
+{
+  "$GMShape":"v2",
+  "%Name":"",
+  "baked":false,
+  "hiddenGeometryClipped":false,
+  "maxX":50.0,
+  "maxY":63.0,
+  "minX":0.0,
+  "minY":0.0,
+  "name":"",
+  "precision":0.5,
+  "resourceType":"GMShape",
+  "resourceVersion":"2.0",
+  "styleGroups":[
+    {"$GMStyleGroup":"","%Name":"","fillStyles":[],"lineStyleData":[],"name":"","resourceType":"GMStyleGroup","resourceVersion":"2.0","shapes":[],},
+  ],
+  "triangulated":true,
+}
