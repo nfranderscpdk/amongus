@@ -1,11 +1,11 @@
 # Session 1 — Velkommen til GameMaker!
 ### *Bygger et Among Us klon — Del 1 af 4*
-**Varighed:** ~75 minutter | **Til hvem:** Totale begyndere (ca. 10 år)
+**Varighed:** ~75 minutter | **Til hvem:** Absolut begyndere (ca. 10 år)
 
 ---
 
 ## Hvad laver vi? 🚀
-Du skal bygge din egen version af **Among Us** — et top-down spil hvor du sniger dig omkring på et rumskib, udfører opgaver og eliminerer besætningsmedlemmer. Ved session 4 har du et helt spilbart spil du selv har lavet!
+Du skal bygge din egen version af **Among Us** — et top-down spil hvor du sniger dig omkring på et rumskib, udfører opgaver og eliminerer besætningsmedlemmer. Ved session 4 har du et spilbart spil du selv har lavet!
 
 ---
 
@@ -71,7 +71,7 @@ GameMaker laver et tomt projekt med ét tomt room — perfekt.
 3. Klik på hver billede du skal bruge → klik på **Download raw file** knappen (eller højreklik → Save image as)
 4. Gem dem alle i en mappe, f.eks. `Desktop/AmongUsAssets/`
 
-> **Sprite billeder at downloade i dag:**
+> **Sprite billeder du skal downloade i dag:**
 > - `the_skeld.png` — rumskibsbaggrunden
 > - `spr_player_idle_down.png`, `spr_player_idle_up.png`, `spr_player_idle_left.png`, `spr_player_idle_right.png`
 > - `spr_player_walk_down.png`, `spr_player_walk_up.png`, `spr_player_walk_left.png`, `spr_player_walk_right.png`
