@@ -16,8 +16,8 @@
     {"name":"Timelines","order":7,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings":[
-    {"name":"fjenne_1","order":1,"path":"objects/fjenne_1/fjenne_1.yy",},
-    {"name":"fjenne_far","order":2,"path":"objects/fjenne_far/fjenne_far.yy",},
+    {"name":"crew_1","order":1,"path":"objects/crew_1/crew_1.yy",},
+    {"name":"crew_parent","order":2,"path":"objects/crew_parent/crew_parent.yy",},
     {"name":"s_attack","order":3,"path":"objects/s_attack/s_attack.yy",},
     {"name":"spr_boy_hurt","order":20,"path":"sprites/spr_boy_hurt/spr_boy_hurt.yy",},
     {"name":"spr_boy_idle","order":19,"path":"sprites/spr_boy_idle/spr_boy_idle.yy",},
@@ -39,6 +39,8 @@
     {"name":"spr_slash","order":14,"path":"sprites/spr_slash/spr_slash.yy",},
     {"name":"spr_talk","order":6,"path":"sprites/spr_talk/spr_talk.yy",},
     {"name":"spr_tileset","order":2,"path":"sprites/spr_tileset/spr_tileset.yy",},
+    {"name":"Sprite27","order":23,"path":"sprites/Sprite27/Sprite27.yy",},
+    {"name":"Sprite28","order":24,"path":"sprites/Sprite28/Sprite28.yy",},
     {"name":"the_skeld","order":22,"path":"sprites/the_skeld/the_skeld.yy",},
   ],
 }

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Crewmate Sprite Preview</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 28px;
+    background: #0c0c1a;
+    color: #dde4ff;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  h1 { color: #72CCF0; margin: 0 0 4px; font-size: 22px; }
+  .sub { color: #6a7a99; font-size: 13px; margin-bottom: 20px; }
+  .note {
+    background: #0d1829;
+    border-left: 3px solid #72CCF0;
+    padding: 12px 16px;
+    font-size: 13px;
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 28px;
+    line-height: 1.7;
+    max-width: 680px;
+  }
+  .note code { background: #1a2a40; padding: 1px 6px; border-radius: 3px; font-size: 12px; }
+  h2 {
+    font-size: 12px; text-transform: uppercase; letter-spacing: 1.5px;
+    color: #5a7090; margin: 0 0 12px;
+    padding-bottom: 6px; border-bottom: 1px solid #1e2340;
+  }
+  .section { margin-bottom: 28px; }
+  .row { display: flex; gap: 14px; flex-wrap: wrap; }
+  .card {
+    background: #111126;
+    border: 1px solid #1e2240;
+    border-radius: 10px;
+    padding: 12px;
+    text-align: center;
+    transition: border-color .2s;
+  }
+  .card:hover { border-color: #72CCF0; }
+  .bg {
+    background-image:
+      linear-gradient(45deg,#191930 25%,transparent 25%),
+      linear-gradient(-45deg,#191930 25%,transparent 25%),
+      linear-gradient(45deg,transparent 75%,#191930 75%),
+      linear-gradient(-45deg,transparent 75%,#191930 75%);
+    background-size: 12px 12px;
+    background-position: 0 0, 0 6px, 6px -6px, -6px 0;
+    background-color: #111120;
+    border-radius: 4px;
+    display: inline-block;
+    line-height: 0;
+  }
+  .card p {
+    margin: 8px 0 0;
+    font-size: 11px;
+    color: #5a7090;
+    font-family: 'Courier New', monospace;
+  }
+  .hint { font-size: 11px; color: #4a6070; margin: 4px 0 0; }
+</style>
+</head>
+<body>
+
+<h1>🚀 Crewmate Sprite Previews — Among Us Style</h1>
+<p class="sub">Red crewmate · 40×52px canvas · displayed at 3× scale (120×156px)</p>
+
+<div class="note">
+  <strong>How to export as PNG for GameMaker:</strong><br>
+  1. Open this file in a browser (just double-click <code>sprite_preview.html</code>)<br>
+  2. Right-click a sprite → <em>Save Image As</em> → saves as <strong>.svg</strong><br>
+  3. Open the SVG in <strong>Inkscape</strong> (free) → File → Export PNG Image → set width <strong>40</strong> → Export<br>
+  &nbsp;&nbsp;&nbsp;Or use <strong>svgexport.io</strong> online — upload, set 40×52, download PNG.<br>
+  4. In GameMaker: right-click Sprites → Create Sprite → Import the PNG → rename to match the filename below.
+</div>
+
+<!-- ===================== FACING DOWN ===================== -->
+<div class="section">
+  <h2>Facing Down (toward viewer)</h2>
+  <div class="row">
+
+    <div class="card">
+      <div class="bg">
+        <svg viewBox="0 0 40 52" width="120" height="156" xmlns="http://www.w3.org/2000/svg">
+          <!-- backpack (right side, draw first so body overlaps it) -->
+          <rect x="29" y="15" width="9" height="16" rx="4" fill="#8A0C0C" stroke="#111" stroke-width="1"/>
+          <!-- body lower -->
+          <rect x="8" y="21" width="22" height="21" rx="9" fill="#C51111" stroke="#111" stroke-width="1.5"/>
+          <!-- head -->
+          <ellipse cx="20" cy="18" rx="12" ry="11" fill="#C51111" stroke="#111" stroke-width="1.5"/>
+          <!-- visor dark surround -->
+          <ellipse cx="19" cy="14" rx="10" ry="8" fill="#1a3545" stroke="#111" stroke-width="1"/>
+          <!-- visor glass -->
+          <ellipse cx="19" cy="14" rx="9" ry="7" fill="#72CCF0"/>
+          <!-- visor shine -->
+          <ellipse cx="15" cy="11" rx="3" ry="2" fill="#C8EEFF" opacity="0.8"/>
+          <!-- legs -->
+          <rect x="8"  y="39" width="10" height="10" rx="4" fill="#C51111" stroke="#111" stroke-width="1"/>
+          <rect x="22" y="39" width="10" height="10" rx="4" fill="#C51111" stroke="#111" stroke-width="1"/>
+        </svg>
+      </div>
+      <p>spr_player_idle_down</p>
+    </div>
+
+    <div class="card">
+      <div class="bg">
+        <svg viewBox="0 0 40 52" width="120" height="156" xmlns="http://www.w3.org/2000/svg">
+          <rect x="29" y="15" width="9" height="16" rx="4" fill="#8A0C0C" stroke="#111" stroke-width="1"/>
+          <rect x="8" y="21" width="22" height="21" rx="9" fill="#C51111" stroke="#111" stroke-width="1.5"/>
+          <ellipse cx="20" cy="18" rx="12" ry="11" fill="#C51111" stroke="#111" stroke-width="1.5"/>
+          <ellipse cx="19" cy="14" rx="10" ry="8" fill="#1a3545" stroke="#111" stroke-width="1"/>
+          <ellipse cx="19" cy="14" rx="9" ry="7" fill="#72CCF0"/>
+          <ellipse cx="15" cy="11" rx="3" ry="2" fill="#C8EEFF" opacity="0.8"/>
+          <!-- left leg stepped forward -->
+          <rect x="8"  y="41" width="10" height="10" rx="4" fill="#C51111" stroke="#111" stroke-width="1"/>
+          <!-- right leg back -->
+          <rect x="22" y="36" width="10" height="10" rx="4" fill="#C51111" stroke="#111" stroke-width="1"/>
+        </svg>
+      </div>
+      <p>spr_player_walk_down</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- ===================== FACING UP ===================== -->
+<div class="section">
+  <h2>Facing Up (away from viewer)</h2>
+  <div class="row">
+
+    <div class="card">
+      <div class="bg">
+        <svg viewBox="0 0 40 52" width="120" height="156" xmlns="http://www.w3.org/2000/svg">
+          <!-- backpack (more prominent when facing away) -->
+          <rect x="27" y="13" width="12" height="19" rx="5" fill="#8A0C0C" stroke="#111" stroke-width="1"/>
+          <rect x="8" y="21" width="22" height="21" rx="9" fill="#C51111" stroke="#111" stroke-width="1.5"/>
+          <ellipse cx="20" cy="18" rx="12" ry="11" fill="#C51111" stroke="#111" stroke-width="1.5"/>
+          <!-- back of helmet (subtle darkening, no visor) -->
+          <ellipse cx="20" cy="17" rx="8" ry="7" fill="#9A0C0C" opacity="0.35"/>
+          <!-- legs -->
+          <rect x="8"  y="39" width="10" height="10" rx="4" fill="#C51111" stroke="#111" stroke-width="1"/>
+          <rect x="22" y="39" width="10" height="10" rx="4" fill="#C51111" stroke="#111" stroke-width="1"/>
+        </svg>
+      </div>
+      <p>spr_player_idle_up</p>
+    </div>
+
+    <div class="card">
+      <div class="bg">
+        <svg viewBox="0 0 40 52" width="120" height="156" xmlns="http://www.w3.org/2000/svg">
+          <rect x="27" y="13" width="12" height="19" rx="5" fill="#8A0C0C" stroke="#111" stroke-width="1"/>
+          <rect x="8" y="21" width="22" height="21" rx="9" fill="#C51111" stroke="#111" stroke-width="1.5"/>
+          <ellipse cx="20" cy="18" rx="12" ry="11" fill="#C51111" stroke="#111" stroke-width="1.5"/>
+          <ellipse cx="20" cy="17" rx="8" ry="7" fill="#9A0C0C" opacity="0.35"/>
+          <!-- right leg stepped forward -->
+          <rect x="22" y="41" width="10" height="10" rx="4" fill="#C51111" stroke="#111" stroke-width="1"/>
+          <!-- left leg back -->
+          <rect x="8"  y="36" width="10" height="10" rx="4" fill="#C51111" stroke="#111" stroke-width="1"/>
+        </svg>
+      </div>
+      <p>spr_player_walk_up</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- ===================== FACING RIGHT ===================== -->
+<div class="section">
+  <h2>Facing Right</h2>
+  <div class="row">
+
+    <div class="card">
+      <div class="bg">
+        <svg viewBox="0 0 40 52" width="120" height="156" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <clipPath id="cr-idle">
+              <rect x="19" y="0" width="21" height="52"/>
+            </clipPath>
+          </defs>
+          <!-- backpack on left (character's back) -->
+          <rect x="2" y="14" width="10" height="18" rx="5" fill="#8A0C0C" stroke="#111" stroke-width="1"/>
+          <!-- body -->
+          <rect x="7" y="22" width="22" height="20" rx="9" fill="#C51111" stroke="#111" stroke-width="1.5"/>
+          <!-- head -->
+          <ellipse cx="19" cy="18" rx="12" ry="11" fill="#C51111" stroke="#111" stroke-width="1.5"/>
+          <!-- visor: right half only, clipped -->
+          <ellipse cx="19" cy="14" rx="11" ry="9" fill="#1a3545" stroke="#111" stroke-width="1" clip-path="url(#cr-idle)"/>
+          <ellipse cx="19" cy="14" rx="10" ry="8" fill="#72CCF0" clip-path="url(#cr-idle)"/>
+          <ellipse cx="22" cy="11" rx="3"  ry="2" fill="#C8EEFF" opacity="0.8" clip-path="url(#cr-idle)"/>
+          <!-- legs -->
+          <ellipse cx="13" cy="44" rx="5" ry="5" fill="#C51111" stroke="#111" stroke-width="1"/>
+          <ellipse cx="22" cy="44" rx="5" ry="5" fill="#C51111" stroke="#111" stroke-width="1"/>
+        </svg>
+      </div>
+      <p>spr_player_idle_right</p>
+    </div>
+
+    <div class="card">
+      <div class="bg">
+        <svg viewBox="0 0 40 52" width="120" height="156" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <clipPath id="cr-walk">
+              <rect x="19" y="0" width="21" height="52"/>
+            </clipPath>
+          </defs>
+          <rect x="2" y="14" width="10" height="18" rx="5" fill="#8A0C0C" stroke="#111" stroke-width="1"/>
+          <rect x="7" y="22" width="22" height="20" rx="9" fill="#C51111" stroke="#111" stroke-width="1.5"/>
+          <ellipse cx="19" cy="18" rx="12" ry="11" fill="#C51111" stroke="#111" stroke-width="1.5"/>
+          <ellipse cx="19" cy="14" rx="11" ry="9" fill="#1a3545" stroke="#111" stroke-width="1" clip-path="url(#cr-walk)"/>
+          <ellipse cx="19" cy="14" rx="10" ry="8" fill="#72CCF0" clip-path="url(#cr-walk)"/>
+          <ellipse cx="22" cy="11" rx="3"  ry="2" fill="#C8EEFF" opacity="0.8" clip-path="url(#cr-walk)"/>
+          <!-- front leg forward, back leg lagging -->
+          <ellipse cx="23" cy="46" rx="5" ry="5" fill="#C51111" stroke="#111" stroke-width="1"/>
+          <ellipse cx="12" cy="41" rx="5" ry="5" fill="#C51111" stroke="#111" stroke-width="1"/>
+        </svg>
+      </div>
+      <p>spr_player_walk_right</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- ===================== FACING LEFT ===================== -->
+<div class="section">
+  <h2>Facing Left</h2>
+  <div class="row">
+
+    <div class="card">
+      <div class="bg">
+        <svg viewBox="0 0 40 52" width="120" height="156" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <clipPath id="cl-idle">
+              <rect x="0" y="0" width="21" height="52"/>
+            </clipPath>
+          </defs>
+          <!-- backpack on right (character's back) -->
+          <rect x="28" y="14" width="10" height="18" rx="5" fill="#8A0C0C" stroke="#111" stroke-width="1"/>
+          <!-- body -->
+          <rect x="11" y="22" width="22" height="20" rx="9" fill="#C51111" stroke="#111" stroke-width="1.5"/>
+          <!-- head -->
+          <ellipse cx="21" cy="18" rx="12" ry="11" fill="#C51111" stroke="#111" stroke-width="1.5"/>
+          <!-- visor: left half only, clipped -->
+          <ellipse cx="21" cy="14" rx="11" ry="9" fill="#1a3545" stroke="#111" stroke-width="1" clip-path="url(#cl-idle)"/>
+          <ellipse cx="21" cy="14" rx="10" ry="8" fill="#72CCF0" clip-path="url(#cl-idle)"/>
+          <ellipse cx="18" cy="11" rx="3"  ry="2" fill="#C8EEFF" opacity="0.8" clip-path="url(#cl-idle)"/>
+          <!-- legs -->
+          <ellipse cx="18" cy="44" rx="5" ry="5" fill="#C51111" stroke="#111" stroke-width="1"/>
+          <ellipse cx="27" cy="44" rx="5" ry="5" fill="#C51111" stroke="#111" stroke-width="1"/>
+        </svg>
+      </div>
+      <p>spr_player_idle_left</p>
+    </div>
+
+    <div class="card">
+      <div class="bg">
+        <svg viewBox="0 0 40 52" width="120" height="156" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <clipPath id="cl-walk">
+              <rect x="0" y="0" width="21" height="52"/>
+            </clipPath>
+          </defs>
+          <rect x="28" y="14" width="10" height="18" rx="5" fill="#8A0C0C" stroke="#111" stroke-width="1"/>
+          <rect x="11" y="22" width="22" height="20" rx="9" fill="#C51111" stroke="#111" stroke-width="1.5"/>
+          <ellipse cx="21" cy="18" rx="12" ry="11" fill="#C51111" stroke="#111" stroke-width="1.5"/>
+          <ellipse cx="21" cy="14" rx="11" ry="9" fill="#1a3545" stroke="#111" stroke-width="1" clip-path="url(#cl-walk)"/>
+          <ellipse cx="21" cy="14" rx="10" ry="8" fill="#72CCF0" clip-path="url(#cl-walk)"/>
+          <ellipse cx="18" cy="11" rx="3"  ry="2" fill="#C8EEFF" opacity="0.8" clip-path="url(#cl-walk)"/>
+          <!-- front leg forward, back leg lagging -->
+          <ellipse cx="17" cy="46" rx="5" ry="5" fill="#C51111" stroke="#111" stroke-width="1"/>
+          <ellipse cx="28" cy="41" rx="5" ry="5" fill="#C51111" stroke="#111" stroke-width="1"/>
+        </svg>
+      </div>
+      <p>spr_player_walk_left</p>
+    </div>
+
+  </div>
+</div>
+
+<div class="note" style="max-width:680px; margin-top:8px;">
+  <strong>Tip — changing the colour:</strong> All body parts use <code>#C51111</code> (red) and <code>#8A0C0C</code> (dark red).
+  Open this HTML file in a text editor, Find &amp; Replace those two hex codes with any colour you like
+  (e.g. <code>#1D6EB5</code> / <code>#0E3D73</code> for blue, or <code>#1B8A1B</code> / <code>#0D4D0D</code> for green)
+  to instantly preview a different crewmate colour.
+</div>
+
+</body>
+</html>
